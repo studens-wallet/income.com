@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>স্টুডেন্ট ওয়ালেট - ডাউনলোড</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;}
+body{background:#f0f3f5;display:flex;justify-content:center;align-items:center;padding:10px;}
+.container{background:#fff;width:100%;max-width:380px;border-radius:15px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.1);}
+.header{background:linear-gradient(135deg,#27ae60,#2ecc71);padding:25px 15px;text-align:center;color:#fff;}
+.logo{width:60px;height:60px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:25px;color:#27ae60;margin:0 auto 10px;box-shadow:0 3px 10px rgba(0,0,0,0.2);}
+h1{font-size:15px;font-weight:bold;margin-bottom:3px;}
+.tagline{font-size:15px;opacity:0.9;}
+.content{padding:12px;}
+.feature{display:flex;align-items:center;margin-bottom:8px;background:#f8f9fa;border-radius:8px;padding:10px;border-left:3px solid #27ae60;transition:0.3s;}
+.feature:hover{background:#ecf9f1;}
+.feature-icon{width:30px;height:30px;border-radius:50%;background:#27ae60;color:#fff;display:flex;align-items:center;justify-content:center;margin-right:8px;font-size:15px;}
+.feature-text{font-size:15px;color:#2c3e50;font-weight:500;}
+.download-btn{display:block;width:100%;text-align:center;background:linear-gradient(135deg,#e74c3c,#c0392b);color:#fff;text-decoration:none;border-radius:10px;padding:14px;font-size:15px;font-weight:bold;box-shadow:0 5px 12px rgba(231,76,60,0.4);transition:0.3s;margin-top:12px;}
+.download-btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(231,76,60,0.6);}
+.file-info{font-size:15px;color:#7f8c8d;margin-top:6px;text-align:center;}
+.instructions{background:#f9fbfc;padding:12px;border-radius:10px;margin-top:15px;border:1px solid #e6e9eb;}
+.instructions h3{font-size:15px;margin-bottom:6px;color:#2c3e50;}
+.instructions ol{margin-left:16px;line-height:1.5;color:#34495e;font-size:15px;}
+.warning{background:#fff6e0;border:1px solid #ffeaa7;padding:10px;border-radius:8px;font-size:15px;color:#856404;margin-top:12px;}
+.footer{text-align:center;font-size:15px;color:#95a5a6;margin-top:15px;}
+.download-status{font-size:15px;color:#27ae60;font-weight:bold;margin-top:8px;text-align:center;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<div class="logo">💰</div>
+<h1>স্টুডেন্ট ওয়ালেট</h1>
+<div class="tagline">রেফার করুন, ইনকাম করুন</div>
+</div>
+<div class="content">
+<div class="feature"><div class="feature-icon">💸</div><div class="feature-text">প্রতি রেফারে ১০ টাকা ইনকাম</div></div>
+<div class="feature"><div class="feature-icon">✅</div><div class="feature-text">৩ রেফারে Withdraw করতে পারবেন</div></div>
+<div class="feature"><div class="feature-icon">📱</div><div class="feature-text">রিচার্জ বা বিকাশে টাকা তুলুন</div></div>
+<a href="https://tetnykcmkukjukttluks.supabase.co/storage/v1/object/public/Hhhhh/com.abbacompany.abbaapp_v1-1.apk" class="download-btn" download="student_wallet_v1.1.apk" onclick="startDownload()">📥 এখনই ডাউনলোড করুন</a>
+<div class="download-status" id="downloadStatus"></div>
+<div class="file-info">ফাইল সাইজ: 2.8 MB | ভার্সন: 1.1 | এক ক্লিকে ডাউনলোড</div>
+<div class="instructions">
+<h3>ইন্সটলেশন নিয়ম:</h3>
+<ol>
+<li>ডাউনলোড বাটনে ক্লিক করুন।</li>
+<li>APK ডাউনলোড হলে Open করুন।</li>
+<li>“Unknown Sources” অনুমতি দিন।</li>
+<li>Install বাটনে ক্লিক করুন।</li>
+<li>ইন্সটল হয়ে গেলে Open করুন।</li>
+</ol>
+</div>
+<div class="warning">⚠️ নোট: “Unknown Sources” enable করতে হতে পারে। এটি নিরাপদ।</div>
+<div class="footer">© 2024 স্টুডেন্ট ওয়ালেট — সকল অধিকার সংরক্ষিত।</div>
+</div>
+</div>
+
+<script>
+function startDownload(){
+const status=document.getElementById('downloadStatus');
+status.textContent='📦 ডাউনলোড শুরু হয়েছে...';
+setTimeout(()=>{status.textContent='✅ ডাউনলোড সম্পন্ন হলে APK ইন্সটল করুন';},1500);
+}
+</script>
+</body>
+</html>
