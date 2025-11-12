@@ -26,42 +26,80 @@ h1{font-size:15px;font-weight:bold;margin-bottom:3px;}
 .warning{background:#fff6e0;border:1px solid #ffeaa7;padding:10px;border-radius:8px;font-size:15px;color:#856404;margin-top:12px;}
 .footer{text-align:center;font-size:15px;color:#95a5a6;margin-top:15px;}
 .download-status{font-size:15px;color:#27ae60;font-weight:bold;margin-top:8px;text-align:center;}
+video{border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.1);cursor:pointer;}
 </style>
 </head>
 <body>
 <div class="container">
-<div class="header">
-<div class="logo">💰</div>
-<h1>স্টুডেন্ট ওয়ালেট</h1>
-<div class="tagline">রেফার করুন, ইনকাম করুন</div>
-</div>
-<div class="content">
-<div class="feature"><div class="feature-icon">💸</div><div class="feature-text">প্রতি রেফারে ১০ টাকা ইনকাম</div></div>
-<div class="feature"><div class="feature-icon">✅</div><div class="feature-text">৩ রেফারে Withdraw করতে পারবেন</div></div>
-<div class="feature"><div class="feature-icon">📱</div><div class="feature-text">রিচার্জ বা বিকাশে টাকা তুলুন</div></div>
-<a href="https://hkkjaflrvuvitkzcvkzv.supabase.co/storage/v1/object/public/studens-wallet/Student_Wallet.apk" class="download-btn" download="student_wallet_v1.1.apk" onclick="startDownload()">📥 এখনই ডাউনলোড করুন</a>
-<div class="download-status" id="downloadStatus"></div>
-<div class="file-info">ফাইল সাইজ: 7.19 MB | ভার্সন: 1.1 | এক ক্লিকে ডাউনলোড</div>
-<div class="instructions">
-<h3>ইন্সটলেশন নিয়ম:</h3>
-<ol>
-<li>ডাউনলোড বাটনে ক্লিক করুন।</li>
-<li>APK ডাউনলোড হলে Open করুন।</li>
-<li>“Unknown Sources” অনুমতি দিন।</li>
-<li>Install বাটনে ক্লিক করুন।</li>
-<li>ইন্সটল হয়ে গেলে Open করুন।</li>
-</ol>
-</div>
-<div class="warning">⚠️ নোট: “Unknown Sources” enable করতে হতে পারে। এটি নিরাপদ।</div>
-<div class="footer">© 2024 স্টুডেন্ট ওয়ালেট — সকল অধিকার সংরক্ষিত।</div>
-</div>
+  <div class="header">
+    <div class="logo">💰</div>
+    <h1>স্টুডেন্ট ওয়ালেট</h1>
+    <div class="tagline">রেফার করুন, ইনকাম করুন</div>
+  </div>
+  <div class="content">
+    <div class="feature"><div class="feature-icon">💸</div><div class="feature-text">প্রতি রেফারে ১০ টাকা ইনকাম</div></div>
+    <div class="feature"><div class="feature-icon">✅</div><div class="feature-text">৩ রেফারে Withdraw করতে পারবেন</div></div>
+    <div class="feature"><div class="feature-icon">📱</div><div class="feature-text">রিচার্জ বা বিকাশে টাকা তুলুন</div></div>
+    <a href="https://hkkjaflrvuvitkzcvkzv.supabase.co/storage/v1/object/public/studens-wallet/Student_Wallet.apk" class="download-btn" download="student_wallet_v1.1.apk" onclick="startDownload()">📥 এখনই ডাউনলোড করুন</a>
+    <div class="download-status" id="downloadStatus"></div>
+    <div class="file-info">ফাইল সাইজ: 7.19 MB | ভার্সন: 1.1 | এক ক্লিকে ডাউনলোড</div>
+
+    <div class="instructions">
+      <h3>ইন্সটলেশন নিয়ম:</h3>
+      <ol>
+        <li>ডাউনলোড বাটনে ক্লিক করুন।</li>
+        <li>APK ডাউনলোড হলে Open করুন।</li>
+        <li>“Unknown Sources” অনুমতি দিন।</li>
+        <li>Install বাটনে ক্লিক করুন।</li>
+        <li>ইন্সটল হয়ে গেলে Open করুন।</li>
+      </ol>
+    </div>
+
+    <!-- 🎬 ভিডিও সহায়তা -->
+    <div class="instructions">
+      <h3>ভিডিও সহায়তা:</h3>
+
+      <!-- এপ Install সমস্যার সমাধান -->
+      <div style="margin-bottom:15px;">
+        <div style="font-size:15px;font-weight:bold;color:#2c3e50;margin-bottom:6px;text-align:center;">🎥 এপ Install সমস্যার সমাধান</div>
+        <video width="100%" poster="https://hkkjaflrvuvitkzcvkzv.supabase.co/storage/v1/object/public/studens-wallet/app_install_problem_thamble.jpg" onclick="openFullscreen(this)">
+          <source src="https://hkkjaflrvuvitkzcvkzv.supabase.co/storage/v1/object/public/studens-wallet/app_install_problem.mp4" type="video/mp4">
+          আপনার ব্রাউজার ভিডিও প্লে করতে পারছে না।
+        </video>
+      </div>
+
+      <!-- এপ Open সমস্যা সমাধান -->
+      <div>
+        <div style="font-size:15px;font-weight:bold;color:#2c3e50;margin-bottom:6px;text-align:center;">🎬 এপ Open সমস্যা সমাধান</div>
+        <video width="100%" poster="https://hkkjaflrvuvitkzcvkzv.supabase.co/storage/v1/object/public/studens-wallet/open_app_problem_thamble.jpg" onclick="openFullscreen(this)">
+          <source src="https://hkkjaflrvuvitkzcvkzv.supabase.co/storage/v1/object/public/studens-wallet/open_app_problem.mp4" type="video/mp4">
+          আপনার ব্রাউজার ভিডিও প্লে করতে পারছে না।
+        </video>
+      </div>
+    </div>
+
+    <div class="warning">⚠️ নোট: “Unknown Sources” enable করতে হতে পারে। এটি নিরাপদ।</div>
+    <div class="footer">© 2025 স্টুডেন্ট ওয়ালেট — সকল অধিকার সংরক্ষিত।</div>
+  </div>
 </div>
 
 <script>
 function startDownload(){
-const status=document.getElementById('downloadStatus');
-status.textContent='📦 ডাউনলোড শুরু হয়েছে...';
-setTimeout(()=>{status.textContent='✅ ডাউনলোড সম্পন্ন হলে APK ইন্সটল করুন';},1500);
+  const status=document.getElementById('downloadStatus');
+  status.textContent='📦 ডাউনলোড শুরু হয়েছে...';
+  setTimeout(()=>{status.textContent='✅ ডাউনলোড সম্পন্ন হলে APK ইন্সটল করুন';},1500);
+}
+
+// ভিডিও ফুলস্ক্রিন করার ফাংশন
+function openFullscreen(video) {
+  if (video.requestFullscreen) {
+    video.requestFullscreen();
+  } else if (video.webkitRequestFullscreen) { /* Safari */
+    video.webkitRequestFullscreen();
+  } else if (video.msRequestFullscreen) { /* IE11 */
+    video.msRequestFullscreen();
+  }
+  video.play();
 }
 </script>
 </body>
